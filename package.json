@@ -1,20 +1,26 @@
 {
+  "name": "svelte-app",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "pnpm check && vite build",
+    "serve": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "svelte": "^3.44.0"
+    "@svitejs/vite-plugin-svelte": "^0.11.1",
+    "sass": "^1.32.8",
+    "svelte": "^3.35.0",
+    "svelte-check": "^2.4.6",
+    "svelte-preprocess": "^4.6.9",
+    "typescript": "^4.2.3",
+    "vite": "2.1.3"
   },
-  "type": "module",
   "dependencies": {
-    "@fontsource/fira-mono": "^4.5.0",
-    "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1"
+    "popmotion": "^11.0.3",
+    "sirv-cli": "^2.0.0",
+    "svelte-particles": "^2.0.6",
+    "tsparticles": "^2.0.6"
   }
 }
