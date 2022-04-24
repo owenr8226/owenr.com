@@ -2,7 +2,6 @@
   import Dock from './dock/Dock.svelte';
   import { onMount } from "svelte";
   import { loadFull } from "tsparticles";
-  import { DarkParticlesConfig } from "./config/dark-particles";
   import { LightParticlesConfig } from "./config/light-particles";
 
   let ParticlesComponent;
